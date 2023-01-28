@@ -1,0 +1,244 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--fb-c-mimocroc);
+    background: var(--fb-c-por-libertad);
+    margin: 0;
+}
+ul:nth-last-child(1) {
+    padding-bottom: 20px;
+}
+#list {
+    position: absolute;
+    top: 0;
+    left: 2.5em;
+    bottom: 0;
+    right: calc(var(--fb-n-num1) + 1em);
+    padding: 0 1em 1em 1em;
+    line-height: 22px;
+    font-size: 16px;
+}
+h2 {
+    color: var(--fb-c-cambio-dolor);
+}
+#about {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-flow: wrap;
+    margin: 5px 0px;
+}
+#form {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0.5em;
+    width: var(--fb-n-num1);
+    z-index: 10;
+}
+#form p {
+    display: inline-block;
+    flex-shrink: 0;
+    flex-grow: 1;
+    margin: 5px;
+    width: min-content;
+}
+#hidden {
+    display: none;
+}
+#pad {
+    width: calc(100% - 8px);
+    height: 30em;
+    max-height: 50vh;
+    color: var(--fb-c-mimocroc);
+    background: var(--fb-c-por-libertad);
+}
+li::marker {
+    content: '';
+}
+.checki {
+    padding-left: 15px;
+}
+.hiddi a::before {
+    content: '❆';
+    color: var(--fb-c-nedodali);
+    margin: 0 5px;
+    width: 14px;
+    display: inline-block;
+}
+.hiddi a:visited:before {
+    color: var(--fb-c-dodali);
+}
+.hiddi {        
+    padding-left: 15px;
+}    
+a {
+    color: var(--fb-c-adygea);
+    transition: 200ms;
+    text-decoration: none;
+}  
+a:visited {
+    color: var(--fb-c-tes-slilsya);
+} 
+.dontvote a::before, .dontvote a:visited::before {
+    display: none;
+}
+.dontvote::before, .dontvote::before {
+    content: '✗';
+    color: var(--fb-c-mimocroc);
+    width: 10px;
+    position: absolute;
+    left: 37px;
+}
+.dontvote {
+    padding-left: 24px;
+    opacity: 0.69;
+    transition: 200ms;
+
+}
+.checki .dontvote {
+    opacity: 0.2;
+}
+.dontvote a {
+    color: var(--fb-c-mimocroc);
+    transition: 200ms;
+    text-decoration: none;
+}  
+a:hover {
+    color: var(--fb-c-gey-orgii);
+    text-decoration: underline dotted 1px;
+}
+.butts, a.butts {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    font-size: 16px;
+    border: none;
+    background: var(--fb-c-custy);
+    color: var(--fb-c-mimocroc);
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    float: right;
+    height: fit-content;
+    width: fit-content;
+    transition: 0.5s;
+    padding:10px;
+    /*overflow: hidden;*/
+}
+button.butts {
+    width: 44px;
+    height: 44px;
+}
+a.butts {
+    width: 24px;
+    height: 24px;
+}
+.butts:hover {
+    background: var(--fb-c-lokilokiloki);
+    /*overflow: visible;*/
+}
+.butts:disabled, .butts[disabled]{
+    background: var(--fb-c-mimocroc);
+    color: var(--fb-c-por-libertad);
+    opacity: 0.69;
+}
+.tooltips {
+    display: inline-block;
+    position: absolute;
+    background: var(--fb-c-mimocroc);
+    padding: 8px 15px;
+    color: var(--fb-c-lokilokiloki);
+    border-radius: 5px;
+    bottom: 120%;
+    white-space: nowrap;
+    opacity: 0;
+    right: -350px;
+    transition: 0.5s;
+}
+.butts:hover .tooltips {
+    opacity: 0.8;
+    right: 0px;
+}
+
+#anchors {
+    position: absolute;
+    background: var(--fb-c-povolokla);
+    width: 2.5em;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    scrollbar-width: thin;
+    scrollbar-color: var(--fb-c-samouvazhenie) var(--fb-c-disciplina);
+}
+
+#anchors::-webkit-scrollbar {
+    width: 5px;
+}
+
+#anchors::-webkit-scrollbar-track {
+    background-color: var(--fb-c-disciplina);
+}
+
+#anchors::-webkit-scrollbar-thumb {
+    background-color: var(--fb-c-samouvazhenie);
+}
+
+
+#anchors a {
+    color: var(--fb-c-cambio-dolor);
+    font-size: 16px;
+    margin: 10px 0px;
+    display: block;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 250ms;
+}
+
+#anchors a:hover {
+    color: var(--fb-c-gey-orgii);
+    transform: scale(1.4);
+}
+
+:root {
+    --fb-n-num1: max(30vw, 14em);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fb-c-custy: #0d3d42;
+        --fb-c-lokilokiloki: #025f69;
+        --fb-c-nedodali: #779595;
+        --fb-c-gey-orgii: #00e3f0;
+        --fb-c-adygea: #9eb8b9;
+        --fb-c-dodali: #00dbff;
+        --fb-c-tes-slilsya: #4accff;
+        --fb-c-cambio-dolor: #bfcccc;
+        --fb-c-por-libertad: #131313;
+        --fb-c-povolokla: #292929;
+        --fb-c-disciplina: #212121;
+        --fb-c-samouvazhenie: #373737;
+        --fb-c-desodarant: #000000;
+        --fb-c-mimocroc: #fcfcfc;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --fb-c-custy: #41b8a2;
+        --fb-c-lokilokiloki: #00f7e0;
+        --fb-c-nedodali: #57658e;
+        --fb-c-gey-orgii: #0bb;
+        --fb-c-adygea: #3b464a;
+        --fb-c-dodali: #0b8dff;
+        --fb-c-tes-slilsya: #0067c1;
+        --fb-c-cambio-dolor: #015f8c;
+        --fb-c-por-libertad: #fcfcfc;
+        --fb-c-povolokla: #e6e6e6;
+        --fb-c-disciplina: #eeeeee;
+        --fb-c-samouvazhenie: #d8d8d8;
+        --fb-c-desodarant: #ffffff;
+        --fb-c-mimocroc: #131313;
+    }
+}
