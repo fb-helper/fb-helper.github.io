@@ -25,16 +25,22 @@ function toggle(event) {
         var work = a.text.trim();
         winners.set(pseud, work);
         for (var li of Array.from(ul.getElementsByTagName('li'))) {
-            li.getElementsByTagName('input')[0].disabled = true;
+            var inp = li.getElementsByTagName('input')[0];
+            if (inp) {
+                inp.disabled = true;
+            }
         }
-        mark.disabled = false
+        mark.disabled = false;
     } else {
         winners.delete(pseud)
         for (var li of Array.from(ul.getElementsByTagName('li'))) {
-            li.getElementsByTagName('input')[0].disabled = false;
+            var inp = li.getElementsByTagName('input')[0];
+            if (inp) {
+                inp.disabled = false;
+            }
         }
     }
-    winners.render(pad)
+    winners.render(pad);
 }
 window.onload = function() {
     hidden = document.getElementById('hidden');
@@ -76,7 +82,7 @@ function copyVoteText() {
     navigator.clipboard.writeText(pad.value);
 
     var tooltip = document.getElementById("tooltip");
-    var count = (pad.value.match(/ 2022 - "/g) || []).length;
+    var count = (pad.value.match(/ 2023 - "/g) || []).length;
     console.log(count);            
     tooltip.innerHTML = "Скопировано строчек: " + count;
 }
@@ -91,7 +97,7 @@ function makeVoc() {
     const arr = list.getElementsByTagName('h2');
     let anchor_dict = {};
     for (const element of arr) {
-        let key = element.innerText[7].toUpperCase();
+        let key = element.innerText[4].toUpperCase();
         if (!(key in anchor_dict)){
             anchor_dict[key] = '#alf_' + key;
             element.setAttribute('id', 'alf_' + key);
