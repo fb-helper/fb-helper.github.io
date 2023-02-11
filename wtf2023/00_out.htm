@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html><head>
+    <meta name="robots" content="noindex, nofollow"/>
+    <title>Список — Работы вне конкурса</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <script type="text/javascript">
+        window.onload = function() {            
+            makeVoc();
+        }
+
+        function makeVoc() {
+            const list = document.getElementById('list');
+            const arr = list.getElementsByTagName('h2');
+            let anchor_dict = {};
+            for (const element of arr) {
+                let key = element.innerText[4].toUpperCase();
+                if (!(key in anchor_dict)){
+                    anchor_dict[key] = '#alf_' + key;
+                    element.setAttribute('id', 'alf_' + key);
+                }
+            }
+
+            const anchors = document.getElementById('anchors');
+            for (let key in anchor_dict)  {
+                let anchor = document.createElement("a");
+                anchor.append(key);
+                anchor.setAttribute('href', anchor_dict[key]);
+                anchors.append(anchor);
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--fb-c-mimocroc);
+            background: var(--fb-c-por-libertad);
+            margin: 0;
+        }
+        ul:nth-last-child(1) {
+            padding-bottom: 20px;
+        }
+        #list {
+            position: absolute;
+            top: 0;
+            left: 2.5em;
+            bottom: 0;
+            right: calc(var(--fb-n-num1) + 1em);
+            padding: 0 1em 1em 1em;
+            line-height: 24px;
+            font-size: 16px;
+        }
+        h2 {
+            color: var(--fb-c-cambio-dolor);
+        }
+        li::marker {
+            content: '';
+        }
+        #list a::before {
+            color: var(--fb-c-nedodali);
+            margin: 0 5px;
+        }
+        #list a:visited:before {
+            color: var(--fb-c-dodali);
+        } 
+        .out a::before {
+            content: '🚀';
+            display: inline-block;
+            width: 21px;
+        }
+        .multi a::before {
+            content: '🌎';
+            display: inline-block;
+            width: 21px;
+        }
+        a {
+            color: var(--fb-c-adygea);
+            transition: 200ms;
+            text-decoration: none;
+        }  
+        a:visited {
+            color: var(--fb-c-tes-slilsya);
+        } 
+
+        a:hover {
+            color: var(--fb-c-gey-orgii);
+            text-decoration: underline dotted 1px;
+        }
+
+        .lang {
+            color: var(--fb-c-mimocroc);
+            padding: 0 10px;
+            margin-right: 8px;
+            background: var(--fb-c-samouvazhenie);
+        }
+
+        #anchors {
+            position: fixed;
+            background: var(--fb-c-povolokla);
+            width: 2.5em;
+            height: 100vh;
+            z-index: 999;
+            overflow-y: auto;
+            overflow-x: hidden;
+            text-align: center;
+            scrollbar-width: thin;
+            scrollbar-color: var(--fb-c-samouvazhenie) var(--fb-c-disciplina);
+        }
+
+        #anchors::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        #anchors::-webkit-scrollbar-track {
+            background-color: var(--fb-c-disciplina);
+        }
+
+        #anchors::-webkit-scrollbar-thumb {
+            background-color: var(--fb-c-samouvazhenie);
+        }
+
+
+        #anchors a {
+            color: var(--fb-c-cambio-dolor);
+            font-size: 16px;
+            margin: 10px 0px;
+            display: block;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            transition: 250ms;
+        }
+
+        #anchors a:hover {
+            color: var(--fb-c-gey-orgii);
+            transform: scale(1.4);
+        }
+
+        :root {
+            --fb-n-num1: max(30vw, 14em);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --fb-c-custy: #0d3d42;
+                --fb-c-lokilokiloki: #025f69;
+                --fb-c-nedodali: #779595;
+                --fb-c-gey-orgii: #00e3f0;
+                --fb-c-adygea: #9eb8b9;
+                --fb-c-dodali: #00dbff;
+                --fb-c-tes-slilsya: #4accff;
+                --fb-c-cambio-dolor: #bfcccc;
+                --fb-c-por-libertad: #131313;
+                --fb-c-povolokla: #292929;
+                --fb-c-disciplina: #212121;
+                --fb-c-samouvazhenie: #373737;
+                --fb-c-desodarant: #000000;
+                --fb-c-mimocroc: #fcfcfc;
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --fb-c-custy: #41b8a2;
+                --fb-c-lokilokiloki: #00f7e0;
+                --fb-c-nedodali: #57658e;
+                --fb-c-gey-orgii: #0bb;
+                --fb-c-adygea: #3b464a;
+                --fb-c-dodali: #0b8dff;
+                --fb-c-tes-slilsya: #0067c1;
+                --fb-c-cambio-dolor: #015f8c;
+                --fb-c-por-libertad: #fcfcfc;
+                --fb-c-povolokla: #e6e6e6;
+                --fb-c-disciplina: #eeeeee;
+                --fb-c-samouvazhenie: #d8d8d8;
+                --fb-c-desodarant: #ffffff;
+                --fb-c-mimocroc: #131313;
+            }
+        }
+    </style>
+</head><body>
+    <div id="anchors"></div>
+    <div id="list">
+        <h2>WTF Новогодняя сборная имени Оливье 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44667403">Better when I'm dancing</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44667598">Como te llamas</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44667481">We are one</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44875966">«Лука Модрич» — новый проект студии Pixar</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44549839">Визитка команды WTF Новогодняя сборная имени Оливье 2023</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44667163/chapters/112374514">Гранатовый браслет (Тэмми и Жозе)</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44667163/chapters/112374469">Мимоза (Фернандо и Серхио)</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44667163/chapters/112374346">Оливье (Оливье, Златан и Анте)</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44875243">Параллельные миры</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44667163/chapters/112374418">Под шубой (Тиаго и Неймар)</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44874616">Рыцарь и король</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44667814">Фамильяр</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44667163/chapters/112374445">Цезарь (Юрген и Хосеп)</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44876005">Чиби-Златан</a>
+    </li>
+</ul>
+<h2>WTF Aeterna 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44826586">[Art] Красной нитью</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44827492">[Art] Ложь стихии</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44828215">[Art] Лучше подавать холодным</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44826109">[Art] Под куполом неба</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44826418">[Art] Свой путь</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44828152">[Art] Север и юг</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44825962">[Art] Север тебя отверг</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44828263">[Art] Смерть идёт — я готова</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44828020">[Art] Смирение</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44826817">[Video] Маленькая роль</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44829538">[Арт] Aeterna actually</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44824390">[Арт] Buenos días</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44829361">[Арт] Ego</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44822980">[Арт] Алва загадочный</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44823988">[Арт] Благими намерениями</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44829256">[Арт] Благодарный слушатель</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44829160">[Арт] Буду ждать вас под омелой</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44824189">[Арт] В саду</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44823745">[Арт] Воин и дева</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44824975">[Арт] Ворон</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44824333">[Арт] Зимняя забава</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44824447">[Арт] Колыбельная</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44822851">[Арт] Необычный подарок</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44823853">[Арт] Отпуск на Марикьяре</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44823187">[Арт] Руппи в кошках</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44829334">[Арт] Семейный праздник</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44829457">[Арт] Сердце и разум</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44824075">[Арт] Сны из Багерлее</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44823082">[Арт] Эпинэ задумчивый</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44825275">[Видео] Beau</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44825380">[Видео] Короли Этерны</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44823412">[Видео] Судьба</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44823502">[Видео] Ты не плачь обо мне</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44823604">[Видео] Утренняя гимнастика по-кэртиански</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44611438">В серых стенах Лаик</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44650915">Вечер в келье накануне Излома</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44486074">Визитка команды Aeterna 2023</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44647717">Встреча</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44615503">Встреча</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44650042">Двадцать один</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44651488">Дорога в небо, или история о том, как Бешеный пять раз ездил в командировку в Дриксен, и один раз, когда он привез работу на дом</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44612656">Жертвоприношение</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44650111">Завтра не придет — лишь трава разлуки высока</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44615401">Когда в Олларии цветёт сирень</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44648389">Когда мы все поступим правильно</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44615782">Когда сердце оживает</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44649115">Ложь стихии</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44610547">Луч солнца под землей</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44649592">Лучше подавать холодным</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44650417">Метельников и Ко</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44647957">Мой дорогой брат</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44650603">Надорский белый</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44647150">Надорский дух</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44651275">Нарушители</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44648932">Немного о наивных оруженосцах</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44650963">Новое поколение</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44648677">Ночная исповедь</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44649850">Паутина</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44649709">Повернёт на полдень ночь</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44615590">Подарок</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44648854">Произнеси это вслух</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44651047">Самый ненавистный человек</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44649274">Север и Юг</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44649391">Смерть идёт — я готова</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44649199">Смирение</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44651143">Спасти магистранта Окделла</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44647594">Старая Придда</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44650777">Третий и Второй</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44612890">Туман в горах</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44646574">Утро в Олларии</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44610772">Шаг вверх</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44650345">Я же своей рукою сердце твое прикрою</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44648194">Я приглашу на танец память</a>
+    </li>
+</ul>
+<h2>WTF Aetherna na zabore 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44458210">[Визитка] Что такое череззабор и как его использовать?</a>
+    </li>
+</ul>
+<h2>WTF Akatsuki no Yona 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44606080">Who see with blinding sight</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44605897">Спасательная операция</a>
+    </li>
+</ul>
+<h2>WTF Anime and Manga 2023</h2>
+<ul>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44609083"><span class="lang">Українська</span>Інший шлях</a>
+    </li>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44607619"><span class="lang">Українська</span>Шарф</a>
+    </li>
+</ul>
+<h2>WTF Attraction of Gogol series 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44433745">Визитка</a>
+    </li>
+</ul>
+<h2>WTF BoZhan 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44731849">Самая длинная ночь</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44731885">Твое место между моих ног</a>
+    </li>
+</ul>
+<h2>WTF Captain Blood 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44444257">Визитка команды WTF Captain Blood 2023</a>
+    </li>
+</ul>
+<h2>WTF Dragon Age 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44787670">[Art] Blood Magic</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44787586">[Art] Fenris</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44787496">[Art] Is this...a Tevinter blood mage?</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44787637">[Art] The Messenger</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44787451">[Art] Рогатой женщины много не бывает</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44636095">Антиванская ночь</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44635876">Силам зла придет звезда!</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44636518">Чем началась сказка</a>
+    </li>
+</ul>
+<h2>WTF Eyeshield 21 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44664232">Бариста года (нет)</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44652088">Рок стар</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44664634">Слишком высокая мода</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44608963">Страшное в кустах</a>
+    </li>
+</ul>
+<h2>WTF genshin abyss 2023</h2>
+<ul>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44592286"><span class="lang">Українська</span>морозна свашка</a>
+    </li>
+</ul>
+<h2>WTF Genshin Anonpact 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44812603">Танцующий Игорь</a>
+    </li>
+</ul>
+<h2>WTF Het 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44552143">WTF Het 2023: чай, кофе, потанцуем?</a>
+    </li>
+</ul>
+<h2>WTF IS IT 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44634376">Ассортимент</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44634709">Исправить можно всё</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44634151">Кусь!</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44808109">Почему на самом деле конфликтуют антивирусы</a>
+    </li>
+</ul>
+<h2>WTF Kylux and Co 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44893111">[Art] Easter Bunnies | Пасхальные кролики</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44870335">[Art] Family Picnic | Семейный пикник</a>
+    </li>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/43626004"><span class="lang">English</span>By Your Grace</a>
+    </li>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/42673650"><span class="lang">English</span>Mother in Law From Hell</a>
+    </li>
+</ul>
+<h2>WTF Marvel 2023</h2>
+<ul>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44571007"><span class="lang">English</span>Ash and Amber</a>
+    </li>
+</ul>
+<h2>WTF Max Frei Vilnius 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44633962">Настойка на...</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44659885">Перспективы</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44586235">Сон во сне</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44629426">Твой собственный свет</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44656723">о море, разлуке и марсельской ухе</a>
+    </li>
+</ul>
+<h2>WTF Mecha 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44509558">Evangelion Shin Gekijoban: CHAPTER EX. Tsuki no kodomo-tachi /Rebuild of Evangelion: Babel Records</a>
+    </li>
+</ul>
+<h2>WTF Neglected 2023</h2>
+<ul>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44665225"><span class="lang">беларуская</span>Бартэр</a>
+    </li>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44806123"><span class="lang">беларуская</span>Клопат</a>
+    </li>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/43430814"><span class="lang">беларуская</span>Маленькая кніжка</a>
+    </li>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44415769"><span class="lang">беларуская</span>Найлепшаму босу</a>
+    </li>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44663590"><span class="lang">беларуская</span>Не памрэш!</a>
+    </li>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/43409637"><span class="lang">беларуская</span>Небяспечныя сувязі</a>
+    </li>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44664868"><span class="lang">беларуская</span>Традыцыі і іннавацыі</a>
+    </li>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44665537"><span class="lang">беларуская</span>У Японіі холадна</a>
+    </li>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44664526"><span class="lang">беларуская</span>Хто?..</a>
+    </li>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44665795"><span class="lang">беларуская</span>Шнары</a>
+    </li>
+</ul>
+<h2>WTF Rare Games 2023</h2>
+<ul>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44601145"><span class="lang">English</span>King of Nothing</a>
+    </li>
+</ul>
+<h2>WTF Souls Ring 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44799685">Bloody Crow of Cainhurst</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44800141">Radagon of the Golden Order</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44799943">Rennala, Queen of the Full Moon</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44800111">Winter Lantern</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44799883">Yharnam</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44800173">Yharnam, Pthumerian Queen</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44454001">Визитка команды WTF Souls Ring 2023</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44625385">Грязная работа</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44625601">День на Пике Древних Драконов.</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44625283">Не враги</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44625511">Полуночный перерыв</a>
+    </li>
+</ul>
+<h2>WTF The Witcher In The Shadows 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44811220">Aen hanse</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44635273">From scratch</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44810455">Hello my friend!</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44810734">Monster of the Erlenwald Forest</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44810830">Serpent and swallow</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44810338">Well here you are!</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44635411">А в Ангрене — любовь</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44810014">Амулет</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44810584">Волчицы</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44636350">Герой</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44464807">Красная Книга Неверлэнда и наблюдение за взаимодействием видов [визитка]</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44810989">Мегера</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44635924">Меня зовут Висенна Хильдегард</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44809420">Немного о защитниках справедливости и морских городках</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44635717">Нильфгаардские брачные игры</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44810221">Ронин</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44810911">Сватовство Йожа</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44811049">Серебряные лилии</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44637241">Третий вариант</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44636083">Цветёт боярышник</a>
+    </li>
+</ul>
+<h2>WTF Tikhoniverse 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44774506">Темно</a>
+    </li>
+</ul>
+<h2>WTF Trash and Ebanina 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44462206">Визитка Trash and Ebanina 2023</a>
+    </li>
+</ul>
+<h2>WTF V poiskah Sasuke 2023</h2>
+<ul>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44838652">Not True Detective</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44556256">WTF в поисках Саске 2023: визитка</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44853121">Вспомни, какого числа ты варил рис прошлым летом</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44853091">Гадатель</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44853031">Саске Курильщика</a>
+    </li>
+    <li class="out" title="Внеконкурсная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44838931">Саске, вернись!</a>
+    </li>
+</ul>
+<h2>WTF Welcome To Desert Bluffs 2023</h2>
+<ul>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44443861"><span class="lang">English</span>[Eng] Hello form Desert Bluffs Too - Visit Card</a>
+    </li>
+</ul>
+<h2>WTF Word of Honor 2023</h2>
+<ul>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44664322"><span class="lang">Українська</span>Поруч</a>
+    </li>
+    <li class="multi" title="Мультиязычная работа">
+        <a target="_blank" href="https://archiveofourown.org/works/44664238"><span class="lang">Українська</span>Я все зроблю</a>
+    </li>
+</ul>
+
+    </div>
+</body></html>
