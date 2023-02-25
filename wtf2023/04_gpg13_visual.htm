@@ -1,0 +1,2334 @@
+<!DOCTYPE html>
+<html><head>
+    <meta name="robots" content="noindex, nofollow"/>
+    <title>Список и голосование — Визуал от M до E</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <script type="text/javascript" src="wtfscript.js"></script>
+    <link rel="stylesheet" type="text/css" href="wtfstyles.css">
+</head><body>
+    <div id="form">
+        <h2><label><input type="checkbox" id="toggle" />режим голосования</label></h2>
+        <div id="hidden">
+            <div id="about">
+                <p>Выберите не&nbsp;менее 3&nbsp;работ, не&nbsp;больше одной от&nbsp;каждой команды.</p>
+                <button id="copy" onclick="copyVoteText()" onmouseout="outTooltip()" disabled="true" type="button" class="butts">
+                    <span id="tooltip" class="tooltips">Скопировать в буфер обмена</span>
+                    <span class="material-symbols-outlined">copy_all</span></button>
+                <a href="https://docs.google.com/forms/d/1j55YERkbUP0SrMw6hdmge_5a3gwvSApg6kJ4_Ui5qrM/viewform?usp=sf_link" id="vote" class="butts" target="_blank">
+                    <span class="tooltips">Перейти на форму голосования</span>
+                    <span class="material-symbols-outlined">volunteer_activism</span>
+                </a>
+            </div>
+            <textarea id="pad"></textarea>
+        </div>
+    </div>
+    <div id="anchors"></div>
+    <div id="list">
+<h2>WTF Душеспасение 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45283456">[Aesthetic] Пигмалион</a>
+    </li>
+</ul>
+<h2>WTF Не_просто_квашино 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45292867">[Art] Мурка</a>
+    </li>
+</ul>
+<h2>WTF Ace Attorney 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327577">[Art] Может, ты проснешься?...</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327646">[Art] Некоторое напряжение</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327223">[Art] Объятия</a>
+    </li>
+</ul>
+<h2>WTF Adult Comics 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323644">[VID] One Shot of Power</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323821">Королева борщевика</a>
+    </li>
+</ul>
+<h2>WTF Aetherna na zabore 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316576">[Collage] Окружён, но не сломлен</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45315904">[Collage] Я помогу</a>
+    </li>
+</ul>
+<h2>WTF Akatsuki no Yona 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326407">[Aesthetic] Дева рассвета</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326185">[Aesthetic] Зашёл как-то Дже-Ха в бордель…</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326014">[Aesthetic] Хаотичное трио</a>
+    </li>
+</ul>
+<h2>WTF All Lovecraft 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323842">[art] Bride of Re-Animators (no one revives alone)</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45322486">[art] Cекс на пляже</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323332">[art] Нечестивым книгам нужен новый переплёт</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323128">[art] Подарок для Хозяина</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45322954">[art] Подношения Гиадам</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45322630">[art] Пора экспериментов</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45322786">[art] Проклятые возлюбленные</a>
+    </li>
+</ul>
+<h2>WTF All Space 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45311971">[Collage] Andromeda</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45312085">[Collage] Cassiopeia</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45311290">[Vid] Богоподобное</a>
+    </li>
+</ul>
+<h2>WTF and the kitchen sink 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45273808">[VID] 'Til the love runs out</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45273847">[VID] Alexandra & Spencer</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45279598">[VID] London's calling?</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45273886">[VID] Love in time of war</a>
+    </li>
+</ul>
+<h2>WTF Anime 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45303928">[Art] A Torn Piece of the Sun</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323512">[Art] Red Sun of the Desert</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45291235">[Art] SSS-mission</a>
+    </li>
+</ul>
+<h2>WTF Anime and Manga 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45269515">Blood freak</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45247930">Itadakimasu ~<3</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327250">[Art] Caught</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45321691">[Art] Imperfect</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45321745">[Art] А, забыл полотенце | So, where is my towel...</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324250">[Art] Триггер</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45299626">[Collage] beautiful, dangerous</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45299584">[Collage] love, fate</a>
+    </li>
+</ul>
+<h2>WTF Anything Retro 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45292588">[Art] 5 + 1</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45292558">[Art] The eye of the beholder</a>
+    </li>
+</ul>
+<h2>WTF Asian BLcony 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326995">[Art] Blood on the dancefloor</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326821">[Art] It’s gonna be good</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326689">[Art]Get what you want</a>
+    </li>
+</ul>
+<h2>WTF ASoIaF 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298492">Marital duty</a>
+    </li>
+</ul>
+<h2>WTF Attraction of Gogol series 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318274">[Collage] Girls do it better</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318160">[Collage] Больное желание</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318346">[Collage] В городе летом очень херово</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318397">[Collage] Если бы ты не случился</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318220">[Collage] Тайные встречи</a>
+    </li>
+</ul>
+<h2>WTF Baroness Setz-Damier Verse 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45314569">[Art] Мечты и реальность Эстебана</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45315859">[Art] Побег из сераля</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319396">[Art] Чтение по ролям</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45315106">[Collage] Мечты о высоком</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45314500">[Collage] Обманутые ожидания</a>
+    </li>
+</ul>
+<h2>WTF BDSM 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45325402">[Aesthetic Collage] Подчинение</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327361">[Collage] Ангельский приход</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323248">[Digital Art] Love is...</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319906">[Digital Art] В углу</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319945">[Digital Art] На свежем воздухе</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320272">[Digital Art] Непослушная</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319783">[Digital Art] Что творится в мансарде</a>
+    </li>
+</ul>
+<h2>WTF Beefleaf 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316759">[Art] Fem He Xuan / Shi Qingxuan</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/44507395">[Art] Fem!XuanXuan</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324442">[Art] Кинк Ши Цинсюаня | Shi Qingxuan's kink</a>
+    </li>
+</ul>
+<h2>WTF Bond 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/41683851">[ART] Death in Venice | Смерть в Венеции</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/44135617">[ART] I've made you up | Я тебя выдумал</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/44096286">[ART] Scent | Запах</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/44130826">[ART] The Tamer | Дрессировщица</a>
+    </li>
+</ul>
+<h2>WTF Box of Chinese 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45299251">[Арт] «Птенчик»</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319969">[Арт] Великое деланье</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318997">[Арт] Долг платежом красен</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45248053">[Арт] Любимые супруги</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327046">[Арт] На закате || On the Sunset</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319174">[Арт] Практическое применение теоретических знаний</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45299827">[Арт] Яньли-цзяожэнь</a>
+    </li>
+</ul>
+<h2>WTF Box of Chocolates 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316114">[Art] Королева амазонок / Amazon Queen</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316066">[Art] Король джунглей / King of the Jungle</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316168">[Art] Юные годы Красной Королевы / Young years of the Red Queen</a>
+    </li>
+</ul>
+<h2>WTF BoZhan 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45300574">GUCCI</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327511">alone at home</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45268660">На расстоянии полушага</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45269290">Найду тебя</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45247768">Опустевший океан</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45268927">С годовщиной, гэгэ</a>
+    </li>
+</ul>
+<h2>WTF BOZHAN PAPAPA 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326641">[Art] Nip slip</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45300706">[Art] Why so serious?</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45301129">[Art] Ваши проблемы глубже, чем я предполагал</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45314248">[Art] Гренадин и егермейстер</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45300409">[Art] Дай почитать</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45301216">[Art] Контрастный душ</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45300565">[Art] Кто мы, когда на нас никто не смотрит?</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45301408">[Art] На коленях</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45300640">[Art] Самая комфортная постель</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45301291">[Art] Сон разума</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45301345">[Art] Трудный съемочный день Дачэна</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45301483">[Fanvids] Сезон дождей</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45322006">[Fanvids] Я бы прошёл 500 миль</a>
+    </li>
+</ul>
+<h2>WTF BUCK-TICK 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45294862">DRESS</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45294841">Kiss You In Heaven</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45294883">Sapphire</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45294952">Любовный напиток</a>
+    </li>
+</ul>
+<h2>WTF Chernyi Yaschic Treski 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318637">In the dark</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45314983">Socks</a>
+    </li>
+</ul>
+<h2>WTF Corazon De Joker etc 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45314785">[Aesthetic Collage] Double dream</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298351">[Aesthetic Collage] Боль | Pain</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316756">[Aesthetic Collage] Дни & ночи | Days and nights</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320932">[Aesthetic Collage] Королева фламинго | Flamingo Queen</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45321106">[Aesthetic Collage] Король | King</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45314521">[Aesthetic Collage] Тетрис | Tetris</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298549">[Aesthetic Collage] нежность хочет вьюгой изойти | tenderness wants to turn into a blizzard</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298636">[Aesthetic Collage] фермерский рок | farmer's rock</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298594">[art] Человек, которого я по-прежнему люблю</a>
+    </li>
+</ul>
+<h2>WTF Cyberpunk and SciFi 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45325057">[ART] Деликатес</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45322792">[ART] Посмотри на них</a>
+    </li>
+</ul>
+<h2>WTF Daemon Targaryen 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45277648">Melt</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45277654">Драконы</a>
+    </li>
+</ul>
+<h2>WTF Death Pain Sorrow 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45321046">Fading memories</a>
+    </li>
+</ul>
+<h2>WTF Detroit Become Human 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320413">[3D Art] Shine like a star</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320665">[3D Art] So close</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320794">[3D Art] Рабочий (нет) настрой / No mood for work</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45321088">[Art] Merry X-mas morning</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45321340">[Art] Вода / Water</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45321520">[Art] Втроем / Three</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45321208">[Art] Жалюзи / Blinds</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45321583">[Art] Ярость / Rage</a>
+    </li>
+</ul>
+<h2>WTF Detroit Universe 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45303160">[3D art] Маленький сюрприз | Little surprise</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45299419">[3d-art] Танцор | The dancer</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45297436">[Art] Взаправду | It's real</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45296380">[Art] Врата в Рай | Gates to Paradise</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298165">[Art] Картофель фри | French Fries</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45299203">[Art] Любовники | Lovers</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317008">[Art] Связь | Connection</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45299104">[Art] Сирень | Lilac</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298312">[Art] Тени | Shadows</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45297247">[Art] Тест-драйв | TestDrive</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298972">[Art] Художник может обидеть каждого | An artist can offend everyone</a>
+    </li>
+</ul>
+<h2>WTF DinCobb 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319726">[Art] Pleasure</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319960">[Art] Твои детские кошмары</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319333">[Art] Трудности отношений с мандалорцем</a>
+    </li>
+</ul>
+<h2>WTF Disco Elysium 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/44096326">[Art] 10% хуя</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45174343">[Art] bathtub</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45282538">[Art] good night</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/44322184">[Art] let me taste you</a>
+    </li>
+</ul>
+<h2>WTF Drarry 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45301180">Aurum et argentum</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45301585">И ради этого я предал Лорда?!</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45297634">Музыкальные инструменты || Musical instruments</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45321418">Ночь забытого будущего // Night of the Forgotten Future</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45297406">Попробуй мои игрушки || Try my toys</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45321496">Туманные ночи, дождливые дни // Misty nights, rainy days</a>
+    </li>
+</ul>
+<h2>WTF Drink and Bite 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45193072">Ебля с макаронами: ожидание/реальность | Pasta fuck: Expectation vs Reality</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320917">Питательная грудь | Nutrient Breast</a>
+    </li>
+</ul>
+<h2>WTF Eyeshield 21 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45303187">[Art] С добрым утром || Good Morning</a>
+    </li>
+</ul>
+<h2>WTF Fix_It 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45290125">[Art] Поглажка Баси</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45232450">[Art] Хотя бы на флейте сыграешь?</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45232801">[Collage] Агитлисток бендомирских анархо-коммунистов</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45232258">[Video] Двигаясь дальше</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45281671">[Video] Случай с Нару</a>
+    </li>
+</ul>
+<h2>WTF Food Omens 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45297274">Добавь сливок в какао</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45297199">Клубника</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45297232">Персик</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45303145">То, что любит ангел</a>
+    </li>
+</ul>
+<h2>WTF Free Zaun 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316093">[Art] The right man’s sleep</a>
+    </li>
+</ul>
+<h2>WTF Furry and Anthro 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45292651">[Art] henlo</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45292726">[Art] Весна на четвертом слое</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45292711">[Art] Влажные фантазии Валерия</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45300358">[Art] Дэхья | Dehya</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45292675">[Art] Заварим чайку?</a>
+    </li>
+</ul>
+<h2>WTF Galactic Empire 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/44757382">Art: Work in progress</a>
+    </li>
+</ul>
+<h2>WTF Genshin Anonpact 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318292">Вечерние ласки</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317671">Все раны в один день зацветут цветами</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327574">Всей швали моих критиков...</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324121">Горечь одуванчика, сладость перерыва</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319555">Дендро резонанс</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45322729">Изделия ручной работы</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323458">Как солнце вечности</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318814">Камисато Аято в стране медицинских чудес [иллюстрация]</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324979">Кокосовое молоко</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317302">Коллекция удовольствий</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323863">Лиса — охуенная тема</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45322399">Любовь к себе</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323005">Невероятные приключения путешественника в Снежной</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327586">О Ватацуми-омиками-но-Микото, суть твоя</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324769">Плодородный сад феи</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324535">Погружение в Бездну</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318112">Под цветом сакуры</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317896">Пять хвостов кицунэ</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320809">Реакция испарения</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320107">Реакция стимуляции</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320974">Семпай нотиснул</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327523">Сладок ли сахар?</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327316">Сумерская ночь</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323686">Терновые шипы, розовый бутон</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324301">Якорь мне в жопу!</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320233">и вознес молитву</a>
+    </li>
+</ul>
+<h2>WTF Genshin Impact 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327490">[art] Пылаю в твоих руках</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327244">В лунном свете</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327286">Победа над Дурином</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327337">Предвестнику тоже нужен отдых</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327505">Секретный метод раздевания по аль-Хайтаму</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327427">Суд пера</a>
+    </li>
+</ul>
+<h2>WTF Genshin_Tales 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324037">[Vid] Крэк #4</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327520">Жемчужина банды Аратаки</a>
+    </li>
+</ul>
+<h2>WTF Gradence Golden Era 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45207112">[Art] Грейвз трахает Криденса (с сюрпризом) | Graves fucks Credence (with surprise)</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45207094">[Art] Криденса оттрахали в подворотне | Credence had been fucked in the alleyway</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45207106">[Art] Листовки | Leaflets</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45207100">[Art] Подарок | Present</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45207103">[Comic strip] На диване | On the couch</a>
+    </li>
+</ul>
+<h2>WTF Gryffindor 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45299428">[Арт] Астрал</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45322171">[Арт] Вечер</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327457">[Арт] Лёжа на красивом холме</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327571">[Арт] Не одни</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45314431">[Арт] Северина носит чулки</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323413">[Видео] Hogwarts trek</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45297859">[Коллаж] Gryffindor girls</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323305">[Коллаж] Влажные сны Долорес Амбридж</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45314320">[Коллаж] Из тех глупых гриффиндорок, что любят прорицания…</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45296389">[Коллаж] Нежность утра</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326515">[Комикс] Вселенная говорит</a>
+    </li>
+</ul>
+<h2>WTF Hannibal NBC 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320566">[aesthetic] - Vertigo</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320749">[vid] - I am free</a>
+    </li>
+</ul>
+<h2>WTF Harry Potter 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45293020">[AESTHETIC] nothing's gonna hurt you, baby</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45293071">[Art] Амортенция для героев / Amortencia for heroes</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45293092">[Art] Амортенция для интеллектуалки / Amortencia for intellectual girl</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45293110">[Art] Профессор Чесноук развлекается с Дьявольскими силками | Professor Garlick has some fun with Devil's Snare</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45293047">[Collage] Partners in crime</a>
+    </li>
+</ul>
+<h2>WTF Het 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316876">[COLLAGE] Страсти по Галатее</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316840">[COLLAGE] Узел любви</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316882">[VID] Все твое. Топор только опусти</a>
+    </li>
+</ul>
+<h2>WTF History like love 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324907">[VID] The Darker the Weather</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45315547">Последняя царица</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45292786">Сломанная жизнь</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45321856">Утречка, государь</a>
+    </li>
+</ul>
+<h2>WTF Holistic Detective Agency 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45325798">[Aesthetic Collage] Бессоница/Insomnia</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326224">[Aesthetic Collage] Не плачь, все не будет хорошо/Don't cry, it won't be okay</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326362">[Aesthetic Collage] Погуляем по заброшкам?</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326122">[Aesthetic Collage] Твой запах, твой вкус/Your scent, your taste</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326680">[Aesthetic Collage] Хочу быть с ней</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327121">[Collage] Освободи мои сны</a>
+    </li>
+</ul>
+<h2>WTF HP Adventurers 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324802">[Aesthetic] Belle</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316750">[Aesthetic] Bitch</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316858">[Aesthetic] Далеко, далеко</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45325633">[Aesthetic] Непростительные</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316948">[Aesthetic] У всего есть цена</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326155">[Art] Моя змейка</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324889">[Art] Непредвиденное</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317098">[Art] Разбудить дракона</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316531">[Collage] Ванна из крови</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326275">[Collage] Люмос</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45325012">[Collage] Погуляем?</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316471">[Collage] Санта Муэрте</a>
+    </li>
+</ul>
+<h2>WTF HPxTR 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45296341">Дымка</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45296719">Единение</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298156">Победа</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298072">Фапчарм</a>
+    </li>
+</ul>
+<h2>WTF IKAR rock-opera 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45321064">[Art] Неслучившаяся встреча</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326797">[Art] Четвертая власть</a>
+    </li>
+</ul>
+<h2>WTF Incest 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323503">Благословленные солью</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323233">Кровавые узы</a>
+    </li>
+</ul>
+<h2>WTF Infinity Starbucks 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326311">[art] I bet it's pink</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45325900">[art] Бруклинские ночи</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45325993">[art] Подготовка</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326116">[art] Румяные</a>
+    </li>
+</ul>
+<h2>WTF Iruma-kun 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323707">[ART] Любви достойна только мама</a>
+    </li>
+</ul>
+<h2>WTF J and K Pop 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45321457">[Art + Sketch] Ли Ноу, ты забыл еще один ремень (Lee Know, you've forgotten one more strap)</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327019">[Art] Taste</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327052">[Collage] Sweet Dominance</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45325603">[Collage] WAVE</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45325009">[Collage] Иначе</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326470">[Collage] Суккýб</a>
+    </li>
+</ul>
+<h2>WTF Jenshin Impact 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45294010">[ART] Ванна для двоих</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45310753">[ART] Вернись ко мне</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45294754">[ART] Ей это понравится?</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45310198">[ART] Ещё один метод лечения</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45293665">[ART] Не ревнуй, Эи</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45294649">[ART] Особая деталь</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45293941">[ART] Я тебя прикончу</a>
+    </li>
+</ul>
+<h2>WTF Jin Guangyao 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323095">[aesthetic collage] Отступая от правил</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45325306">[art] «Твое сердце не бьется» (Ночной гость)</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323746">[art] Подарок от анонимного поклонника</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323467">[collage] Неожиданность</a>
+    </li>
+</ul>
+<h2>WTF Kiheitai and Vice-Commander 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/44998105">i'm good at bein' bad</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/44961394">pink shot</a>
+    </li>
+</ul>
+<h2>WTF Kings 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320614">[Collage] Rose and milk</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326446">[Fanvid] Я, ты, БДСМ</a>
+    </li>
+</ul>
+<h2>WTF Kotiki 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45306472">[Art] Игра</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45299014">[Art] Имболк</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298861">[Art] Кошка-единорожка | Unicorn Cat</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298315">[Art]Богиня Счастья</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298612">[Art]Закат</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298537">[Art]Угадай, кто</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298744">[Art]Фрейя и котики | Freyja and cats</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45300433">[Collage] Все супергерои делают это</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45300682">[Collage] Извращенец</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45300547">[Collage] Сиреневый и зеленый</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319756">[Fanvids] Чуждые</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45299893/chapters/113969467">Бастет</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45300280/chapters/113970484">Кошачьи нежности</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45300280/chapters/113970613">Люби меня по-кошачьи</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45300061/chapters/113969896">Ночь и тигр</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45299893/chapters/113969566">Сехмет</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45300061/chapters/113970010">Сумрак и пума</a>
+    </li>
+</ul>
+<h2>WTF Krapivin 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/44112972">[Collage] Настя</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/44112952">[Collage] У трубача</a>
+    </li>
+</ul>
+<h2>WTF Kylux and Co 2023</h2>
+<ul>
+    <li class="dontvote" title="Не для голосования">
+        <a target="_blank" href="https://archiveofourown.org/works/44837521">[Art] A Raise Well Earned | Совершенно заслуженное повышение</a>
+    </li>
+    <li class="dontvote" title="Не для голосования">
+        <a target="_blank" href="https://archiveofourown.org/works/42730374">[Art] Beauty and the Beast | Красавица и Чудовище</a>
+    </li>
+    <li class="dontvote" title="Не для голосования">
+        <a target="_blank" href="https://archiveofourown.org/works/45281062">[Art] Before the Shift | Перед вахтой</a>
+    </li>
+    <li class="dontvote" title="Не для голосования">
+        <a target="_blank" href="https://archiveofourown.org/works/45085390">[Art] Disarming | Обезоружил</a>
+    </li>
+    <li class="dontvote" title="Не для голосования">
+        <a target="_blank" href="https://archiveofourown.org/works/42983568">[Art] Don't Tell Dad | Не говори папаше</a>
+    </li>
+    <li class="dontvote" title="Не для голосования">
+        <a target="_blank" href="https://archiveofourown.org/works/45296944">[Art] Gold Robe | Золотой халат</a>
+    </li>
+    <li class="dontvote" title="Не для голосования">
+        <a target="_blank" href="https://archiveofourown.org/works/44679682">[Art] Hux and the Twins | Хакс и близнецы</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45293788">[Art] Rousing Gymnastics | Занимательная гимнастика</a>
+    </li>
+    <li class="dontvote" title="Не для голосования">
+        <a target="_blank" href="https://archiveofourown.org/works/45281299">[Art] The Long-Awaited Reunion | Долгожданное воссоединение</a>
+    </li>
+    <li class="dontvote" title="Не для голосования">
+        <a target="_blank" href="https://archiveofourown.org/works/44324431">[Art] Under His Eye | Пред Его очами</a>
+    </li>
+</ul>
+<h2>WTF Lya ty krysa 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45294529">[Art] There is a girl who sits all alone</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45197236">[Art] Двуликий</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45197500">[Art] Пьета</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45197395">[Art] Рябина</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45197326">[Art] Я тебя...</a>
+    </li>
+</ul>
+<h2>WTF Magrealism and Conspirology 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45315028">Все приходится делать самому</a>
+    </li>
+</ul>
+<h2>WTF Marvel 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323278">[Art] Лучшие друзья девушек — это камни бесконечности</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323341">[Collage] Angry And Horny Are Not Mutually Exclussive</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323761">[Collage] Pink Skull</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323494">[Collage] Даниель/Пегги</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323398">[Collage] Приятный вечер</a>
+    </li>
+</ul>
+<h2>WTF Mass Effect 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327400">[AESTETIC] Случайная встреча</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45325519">[ART] Сладкий вкус победы || The Sweet Taste of Victory</a>
+    </li>
+</ul>
+<h2>WTF Max Frei 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326788">[ARTS] Может, физика жестока, только химия права</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326386">[ART] Каждый охотник желает знать, где сидит магистр</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326503">[ART] Ловись, рыбка</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326887">[ART] Сердце честнее</a>
+    </li>
+</ul>
+<h2>WTF Mayor Grom 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45302899">[Video] Crazy in love</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45302941">[Video] Money, money, money</a>
+    </li>
+</ul>
+<h2>WTF Mecha 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298105">[Collage] сталью налился сердца комок в груди</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298174">[Collage] этот парень был из тех, кто просто любит жизнь</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45313288">[art] Выходные Бабы-Яги</a>
+    </li>
+</ul>
+<h2>WTF Midsomer Murders 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45274855">Барнаби, Том Барнаби</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45244552">Кровные узы</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319930">Мидсаммерское барокко, или «Добрый вечер, сержант Трой!»</a>
+    </li>
+</ul>
+<h2>WTF Modao Dezhurka 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45315661">The Underestimation of Denial</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45322075">Вечная невеста</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45322330">Кроличек подрос</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323545">Месть</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45322051">Призыв</a>
+    </li>
+</ul>
+<h2>WTF Modao Zushi 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317683">В объятьях озера / In the Arms of the Lake</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318592">Важные переговоры / Important Negotiations</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45322072">Дело рук моих / The Work of My Hands</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318238">Кролики / Rabbits</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45321946">Нежность / Tenderness</a>
+    </li>
+</ul>
+<h2>WTF Moon Knight 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45295465">[Collage] Who talks first?</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298618">[Collage] You are delicious</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45295816">[Collage] Встреча после разлуки</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45295324">[Collage] Любовь, смерть и лунный рыцарь</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327205">[Fanvid] Лунный крэк</a>
+    </li>
+</ul>
+<h2>WTF Music 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45245431">[видео] ртфаврш</a>
+    </li>
+</ul>
+<h2>WTF MXTX and Multicultivation 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298690">E.T.</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45302725">I am the monster you created</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298057">Доброе утро, дагэ!</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298225">Если в башне поебень…</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45297943">Рукописи не горят</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298903">Товариші по нещастю</a>
+    </li>
+</ul>
+<h2>WTF Naruto 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327259">Морская царевна</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326533">Тайна саннинов</a>
+    </li>
+</ul>
+<h2>WTF Nastoyashee Sveklo 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45245635">[арт] Не тронь!</a>
+    </li>
+</ul>
+<h2>WTF Neglected 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320302">[Art] Excrucio Eternum</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/44136021">[Art] The way to a man's heart</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/44135791">[Art] You don't deserve to be on his plate</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45275785">[Art] Болты и гайки</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298453">[Art] Запутанная ситуация || Tangled</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45292477">[Art] Рыбка на крючке</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45303070">[Art] Шах и мат</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45305002">[Collage] Причина</a>
+    </li>
+</ul>
+<h2>WTF Obey Me 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45295345">[Aesthetic] Pink&Silver</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45295357">[Art] Furry MC</a>
+    </li>
+</ul>
+<h2>WTF One Piece 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298504">Любопытный экземпляр</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324724">У тебя стало больше шрамов с нашей последней встречи</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298384">демонтажник</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298411">золотая волна</a>
+    </li>
+</ul>
+<h2>WTF OnlyOneOf 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324649">[cOllage] Black Lace</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324268">[cOllage] White Lace</a>
+    </li>
+</ul>
+<h2>WTF Other bl-Novels 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45199156">[ART] А-Сюй</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326830">[ART] КотоВан</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45302425">[ART] Между двух огней</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45198928">[VID] Forever</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45302449">[VID] По завету великого философа</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316606">[VID] Путь мести</a>
+    </li>
+</ul>
+<h2>WTF Our Flag Means Death 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324574">[Art] For Art's Sake</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326065">[Art] Кракен и русалка</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323587">[Art] Сердце капитана</a>
+    </li>
+</ul>
+<h2>WTF Playstation Games 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45294907">[Fanart] hurt me</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45294610">[Fanart] Сердце, исполненное любви</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45294772">[Fanart] Это земля Мёрфри || That's Murfree Country</a>
+    </li>
+</ul>
+<h2>WTF Polyamory 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320686">[art] Крепкая дружба pt.2</a>
+    </li>
+</ul>
+<h2>WTF project Desert 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45299200">Богини</a>
+    </li>
+</ul>
+<h2>WTF Rare Games 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45325612">4 утра</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323521">Крики - это страсть</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323311">Пока господа не видят</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323389">Сзади</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326140">Хрупкая</a>
+    </li>
+</ul>
+<h2>WTF Reptiles and Amphibians 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45295558">Вдохновленное Климтом</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45295681">Великая Матерь</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45295597">Змеиная госпожа</a>
+    </li>
+</ul>
+<h2>WTF Russian TV Vampires 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317410">[Collage] Бібліотека</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317461">[Collage] Рок-н-ролл на троих</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317491">[Collage] Телохранители</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317536">[Collage] У нас есть час</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320578">[Fanvid] Карамора - Герой</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45299209">[Fanvid] Крылатые качели</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45277720">[Fanvid] Чудовище</a>
+    </li>
+</ul>
+<h2>WTF Sea Adventures 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45303745">[Art] Dive into the game</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45311503">[Collage] Ocean is sexy</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45325693">[fanvid] Чужое</a>
+    </li>
+</ul>
+<h2>WTF Shingeki no Kyojin 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45306160">Кисточки</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319729">Любовь — хорошо!</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323524">Новое вложение</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45306442">Тайный альбом Моблита Бернера</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326872">Хороший мальчик</a>
+    </li>
+</ul>
+<h2>WTF Siblings 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298258">[Collage] к острову яблок</a>
+    </li>
+</ul>
+<h2>WTF Star Trek Universe 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317806">[art] The Naked Time</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317887">[art] Когда не хватило на проезд</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318247">[art] Не на того напали [You Got the Wrong Girl]</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318310">[art] Поврежден, но не побежден [Damaged, Not Defeated]</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318700">[art] Спокойствие</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45315427">[art] Трое среди звёзд</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326044">[art] Чай из красных листьев</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45324508">[vid] Come into Focus</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45312874">[vid] Иной</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45315154">[vid] Не борг!</a>
+    </li>
+</ul>
+<h2>WTF Star Wars 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316249">Мечты о ней</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316273">Секретная переписка Энакина и Падме</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323125">Сладкий плен</a>
+    </li>
+</ul>
+<h2>WTF Stealth Games 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320140/chapters/114021076">but mother, i am feerse</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320140/chapters/114021034">literal out of body experience</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320095">смотрите, волчий хуй!</a>
+    </li>
+</ul>
+<h2>WTF Stucky and Roles 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45322867">Belated Valentine's Day</a>
+    </li>
+</ul>
+<h2>WTF SW Isard x Palpatine 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45297202">[Art] Без слов</a>
+    </li>
+</ul>
+<h2>WTF Team Wang 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316540">[Art] damm gut</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316621">[Art] hold me tights</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45302041">[Fanvids] Сны инкуба</a>
+    </li>
+</ul>
+<h2>WTF The Witcher 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318055">[Art] Не пьет тот, кому не наливают</a>
+    </li>
+</ul>
+<h2>WTF Tikhoniverse 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317875">Какие-то вопросы, Игорь Константинович?</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45315532">Надежды юношей питают</a>
+    </li>
+</ul>
+<h2>WTF Tolkien 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45325660">[Art] За закрытыми дверями</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317473">[Art] Монстры Тол-ин-Гаурхот</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/44469676">[Art] На побережье</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45289978">[Art] Перед свадьбой</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45066649">[Art] Хороший нолдо — мертвый нолдо</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45290383">[Art] Цветы и звёзды</a>
+    </li>
+</ul>
+<h2>WTF Tony Stark 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45274255">[Aesthetic] Космические каникулы</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45275149">[Aesthetics] Протяни мне руку из тьмы</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45275386">[Art] Асгардские сладости</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45274489">[Art] Люби своих демонов</a>
+    </li>
+</ul>
+<h2>WTF Trash and Ebanina 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45323812">Tree of the fucking knowledge</a>
+    </li>
+</ul>
+<h2>WTF Ural 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298684">[Aesthetic Collage] Вдохновение | The Inspiration</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45298747">[Aesthetic Collage] Кровавые камешки | Bloody pebbles</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45299107">[Art] Живой огонь | Flame</a>
+    </li>
+</ul>
+<h2>WTF Warhammer Blood Angels 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320827">А не Хорус ли ты, часом?</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320542">Амит ОПЯТЬ</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320740">Ах, эта свадьба...</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45320983">В очередь!</a>
+    </li>
+</ul>
+<h2>WTF Welcome To Desert Bluffs 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45208681">[Art] lovely in red</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45208570">[Art] take care of</a>
+    </li>
+</ul>
+<h2>WTF Wolfhard 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45314788">[AESTHETICS] Фрагменты</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45315196">Высшая форма</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316000">Дримтим по сокращению численности населения</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45315391">Золото и грязь</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45315001">Изнанка никогда тебя не отпустит</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45315640">Отродье</a>
+    </li>
+</ul>
+<h2>WTF Word of Honor 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318874">Будущее, между прошлым и настоящим</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317713">Вечерний поцелуй</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319393">Всё снимай</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319075">Если ненадолго угнать автомобиль</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317866">Мое чудовище</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318562">Мой лорд</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318268">Незваный гость</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319747">Отрезанные рукава</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45318424">Пленник</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45319654">Укус</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45317920">Этот Санта сейчас разберется, кто был хорошим мальчиком</a>
+    </li>
+</ul>
+<h2>WTF Yasuhiro Nightow Team 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45255667">[Art] Suffer me to touch thy body</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45253396">[Art] what remains of love in the acid</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45253717">[Art] В пору цветения</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45253651">[Art] Улей</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45253552">[Art] Часть тебя</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45253780">[Art] Я прикрою!</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45253219">[aesthetic collage] elegance</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45253255">[aesthetic collage] fire</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45293611">[aesthetic collage] real men wear a kilt</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45293680">[aesthetic collage] warm girl</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45293773">[aesthetic collage] льдинка</a>
+    </li>
+</ul>
+<h2>WTF YiboYura 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45316861">[Art] Серебро и золото</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45327289">[Fanvids] I’ve made mistakes</a>
+    </li>
+</ul>
+<h2>WTF ღSpideypoolღ 2023</h2>
+<ul>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45302152">Love in your eyes</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45301417">Классный плакат | Cool Poster</a>
+    </li>
+    <li>
+        <input type="checkbox" style="display:none" class="mark" />
+        <a target="_blank" href="https://archiveofourown.org/works/45326479">Сердечки из плохишей || Hearties from baddies</a>
+    </li>
+</ul>
+
+    </div>
+</body></html>
